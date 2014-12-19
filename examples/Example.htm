@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <title>Example - ACCEPT Real Time Plug-in</title>
+    
+      <script src="../extras/jquery/jquery-1.7.1.js" type="text/javascript"></script>
+     
+      <script src="../extras/accept-pre-edit-real-time/extras/underscore/underscore-min.js" type="text/javascript"></script>   
+	  <script src="../extras/accept-pre-edit-real-time/js/accept-realtime-jquery-plugin-1.0.js" type="text/javascript"></script>  
+	  <link href="../extras/accept-pre-edit-real-time/css/AcceptRealTime.css" rel="stylesheet" type="text/css" />
+	  
+	  <script src="../extras/jquery-ui/jquery-ui-1.8.24.custom.min.js" type="text/javascript"></script>   
+	  <script src="../extras/tiny_mce_4.0.26/tinymce.min.js" type="text/javascript"></script>
+	  <script src="../extras/tiny_mce_4.0.26/jquery.tinymce.min.js" type="text/javascript"></script>
+	  <script src="../extras/dialogextend/jquery.dialogextend.1_0_1.js" type="text/javascript"></script> 	  
+	  <link href="../css/Accept.css" rel="stylesheet" type="text/css" />
+	  <link href="../css/jquery-ui.css" rel="stylesheet" type="text/css" />
+	  <link href="../css/post-edit.css" rel="stylesheet" type="text/css" />
+	  
+	  <script src="../js/accept-postedit-jquery-plugin-2.0.js" type="text/javascript"></script>  
+	  <script src="[ACCEPT_API_URL]/Scripts/jquery.signalR-2.1.1.js"></script>
+      <script src="[ACCEPT_API_URL]/SignalR/hubs"></script>    
+	  
+	  
+<script type="text/javascript">
+
+    $(document).ready(function () {	
+	
+		$('#post-edit-placeholder').find("div.edit-me").AcceptPostEdit({
+            textIdContainer: 'title',
+            dialogHeight: 630,
+            dialogWidth: 1050,
+            acceptServerPath: '[ACCEPT_API_URL]/Api/v1',                                                        
+            userIdSelector: 'div.userContainer',
+            userIdContainer: 'title',
+            imagesPath: '../css/images',
+            acceptHubUrl: '[ACCEPT_API_URL]/signalr',
+            cssPath:'../extras/accept-pre-edit-real-time/css',
+            interactiveCheckConfigPath: '[ACCEPT_API_URL]/config/lang'
+
+        });
+   
+	});
+
+</script>
+
+</head>
+<body>
+<h1>ACCEPT Post-Edit Plug-in</h1>
+<div>
+<h3>Use Case:</h3>
+<div>
+
+<p>In this example, there are three paragraphs that will be used to demonstrate the Post-Edit functionality.</p>
+<p>Clicking one of the segments triggers the process of opening the dialog box from which the content edition takes place.</p>
+</div>
+
+</div>
+
+<h2>Content Edition Placeholders:</h2>
+
+<div id="post-edit-placeholder">
+
+<div class="edit-me" title="[SOME POSTEDIT TASK -> TEXT ID]">
+<div class="userContainer" style="display:none" title="[ACCEPT_USER_NAME]"></div>Content to edit.</div>
+
+<div class="edit-me" title="[SOME OTHER POSTEDIT TASK -> TEXT ID]">
+<div class="userContainer" style="display:none" title="[ACCEPT_USER_NAME]"></div>More content to edit.</div>
+
+<div class="edit-me" title="[EVEN ANOTHER OTHER POSTEDIT TASK -> TEXT ID]">
+<div class="userContainer" style="display:none" title="[ACCEPT_USER_NAME]"></div>Even more content to edit</div>
+
+</div>
+
+
+<br />
+
+<div>
+<b>
+Notes: 
+</b>
+<br />
+<p>Replace [SOME POSTEDIT TASK -> TEXT ID] with valid text ID's. You need to create a Project and upload a task first.</p>
+<p>Replace [ACCEPT_USER_NAME] with valid user name. 
+You need to add a an user to the Post-Edit Project created above(or just use your own User Name - it works since it was the one creating the project).</p>
+</div>
+
+
+<h3>(more documentation will be available soon)...</h3>
+
+</body>
+</html>
