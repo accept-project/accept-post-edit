@@ -13,7 +13,7 @@ API side:
 1 - The first step is to create an Edition project and then Upload some content into it. 
 2 - Once the project is created, content for edition can be uploaded, the expected format is JSON and the structure can be:
 
-'''json
+```json
 {
   "MtContactEmail": "", 
   "MtDate": "2013-08-28T10:28:25.772468", 
@@ -57,8 +57,7 @@ API side:
     }
   ]
 }
-
-'''
+```
 
 Client side:
 
