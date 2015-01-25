@@ -3,12 +3,14 @@ accept-post-edit
 
 Overview
 ========
-
+//TODO:
 
 Configuration Steps:
 ====================
 
-API side:
+API/Portal side:
+
+Note: the steps below can be performed from the ACCEPT Portal UI or using directly the REST API methods. 
 
 1 - The first step is to create an Edition project and then Upload some content into it. 
 
@@ -59,6 +61,15 @@ API side:
   ]
 }
 ```
+
+3 - The content Edition itself can happen within the ACCEPT Portal(.../ProjectDetail page) or via external environment integration - which means in practice take the client and deploy it elsewhere. 
+
+In both situations there must be an implementation of the Post-Edit client, in the portal it is ready for use, so basically every time a JSON file is uploaded via API or Portal UI it is transformed in a Post-Edition Task and displayed within the "ProjectDetails" page. 
+
+In this page users invited to participate in the project will see displayed all the uploaded JSON content in a form of Edition Tasks. Once one is clicked the external pop up dialog should be displayed with the content ready for edit.
+
+If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check the Client side implementation section.
+
 
 Client side:
 
