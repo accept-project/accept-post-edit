@@ -88,7 +88,22 @@ If the content is planned to be edited within an external environment(let's say 
 
 ##Client side:
 
-Note: if the content edition is planned to be happening outside the ACCEPT Portal. 
+Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client needs to be downloaded and integrated within the target environment.
+
+```html
+<div id="post-edit-placeholder">
+
+<div class="edit-me" title="a50ecdcaa123321sdasdas55e72e9b0_proj134">
+<div class="userContainer" style="display:none" title="david_luz@sapo.pt"></div>Content to edit.</div>
+
+<div class="edit-me" title="b8267f63441baff82edeee287b7b9d737291798bd38ab76881002eaa48bd36c15d3fb7747c9c27102c23bcfd83e0278fbdf9db37506ccd3b2883ee0741a4797e_proj134">
+<div class="userContainer" style="display:none" title="david_luz@sapo.pt"></div>More content to edit.</div>
+
+<div class="edit-me" title="f1b180a8db51ddddd3bc6_proj134">
+<div class="userContainer" style="display:none" title="david_luz@sapo.pt"></div>Even more content to edit</div>
+
+</div>
+```
 
 It is setup in order to know where to find the unique ID’s
 When those elements are clicked and external windows is displayed and the user can perform the edition.
