@@ -4,7 +4,8 @@ accept-post-edit
 Overview
 ========
 
-The data Edition API allows you to edit Web content on the fly, what happens with the change can later be retrieved.
+The data Edition API allows to edit Web content on the fly, what happens with the change can later be retrieved.
+All editions are being recorded in the background and can be automatically brought live by any underlying system: with a proper pipeline workflow in place.
 
 ##High level features:
 
@@ -88,26 +89,25 @@ If the content is planned to be edited within an external environment(let's say 
 
 ##Client side:
 
-Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client needs to be downloaded and integrated within the target environment.
+Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client source needs to be downloaded and integrated within the target environment.
+
+- To keep in mind is that the client needs to be "pointed at" some specific HTML structure, for instance:
 
 ```html
 <div id="post-edit-placeholder">
 
-<div class="edit-me" title="a50ecdcaa123321sdasdas55e72e9b0_proj134">
-<div class="userContainer" style="display:none" title="david_luz@sapo.pt"></div>Content to edit.</div>
+<div class="edit-me" title="TEXTID_OF_THE_UPLOADED_TASK_I_proj134">
+<div class="userContainer" style="display:none" title="david@somewhere.com"></div>Content to edit.</div>
 
-<div class="edit-me" title="b8267f63441baff82edeee287b7b9d737291798bd38ab76881002eaa48bd36c15d3fb7747c9c27102c23bcfd83e0278fbdf9db37506ccd3b2883ee0741a4797e_proj134">
-<div class="userContainer" style="display:none" title="david_luz@sapo.pt"></div>More content to edit.</div>
+<div class="edit-me" title="TEXTID_OF_THE_UPLOADED_TASK_II_proj134">
+<div class="userContainer" style="display:none" title="david@somewhere.com"></div>More content to edit.</div>
 
-<div class="edit-me" title="f1b180a8db51ddddd3bc6_proj134">
-<div class="userContainer" style="display:none" title="david_luz@sapo.pt"></div>Even more content to edit</div>
+<div class="edit-me" title="TEXTID_OF_THE_UPLOADED_TASK_IIII_proj134">
+<div class="userContainer" style="display:none" title="david@somewhere.com"></div>Even more content to edit</div>
 
 </div>
 ```
-
-It is setup in order to know where to find the unique ID’s
-When those elements are clicked and external windows is displayed and the user can perform the edition.
-All changes are being recorded in the background and can be automatically brought live by the underlying system depending on the pipeline workflow.
+The structure of the HTML will dictate which content can be edited and who can perform the edition. Within the  [Examples](https://github.com/accept-project/accept-post-edit/tree/master/examples "Examples") folder it is possible to read more on the expected HTML striucture and the client instantiation.
 
 Note:
 =====
