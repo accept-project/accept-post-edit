@@ -3,12 +3,27 @@ accept-post-edit
 
 Overview
 ========
-//TODO:
+
+The data Edition API allows you to edit Web content on the fly, what happens with the change can later be retrieved.
+
+##High level features:
+
+- Relatively straightforward to implement since its JavaScript based.
+
+- The entire content of a given HTML page can be grouped within an Edition project.
+
+- The client (that is completely invisible for the user) – on certain event (on-click for example) over a configured element it (the client) will identify (using the hidden attribute/element)  the HTML data it should load and display the content within a dialog box.
+
+- All editions history is being recorded, as well as all keystrokes and timings performing edition.
+
+- Collaborative edition is allowed.
+
+- Relatively straightforward and non intrusive integration (+ CSS inheritance).  
 
 Configuration Steps:
 ====================
 
-API/Portal side:
+##API/Portal side:
 
 Note: the steps below can be performed from the ACCEPT Portal UI or using directly the REST API methods. 
 
@@ -71,28 +86,13 @@ In this page users invited to participate in the project will see displayed all 
 If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check the Client side implementation section.
 
 
-Client side:
+##Client side:
+
+Note: if the content edition is planned to be happening outside the ACCEPT Portal. 
 
 It is setup in order to know where to find the unique ID’s
 When those elements are clicked and external windows is displayed and the user can perform the edition.
 All changes are being recorded in the background and can be automatically brought live by the underlying system depending on the pipeline workflow.
-
-Data Edition API allows you to edit Web content on the fly, what happens with the change can later be decided.
-
-- Again: relatively straightforward to implement since its JavaScript based.
-
-- The entire content of a given HTML page can be grouped within an Edition project.
-
-- The client (that is completely invisible for the user) – on certain event (on-click for example) over a configured element it (the client) will identify (using the hidden attribute/element)  the HTML data it should load and display the content within a dialog box.
-
-- All editions history is being recorded, as well as all keystrokes and timings performing edition.
-
-- Collaborative edition is allowed.
-
-Relatively straightforward and non intrusive integration (+ CSS inheritance).  
-
-
-
 
 Note:
 =====
