@@ -1,13 +1,14 @@
 accept-post-edit
 ================
 
-Overview
-========
+####Overview
 
 The data Edition API allows to edit Web content on the fly, what happens with the change can later be retrieved.
 All editions are being recorded in the background and can be automatically brought live by any underlying system: with a proper pipeline workflow in place.
 
-##High level features:
+Full documentation available in the [docs repository](https://github.com/accept-project/accept-docs/tree/master/post-edit).
+
+######High level features:
 
 - Relatively straightforward to implement since its JavaScript based.
 
@@ -21,10 +22,9 @@ All editions are being recorded in the background and can be automatically broug
 
 - Relatively straightforward and non intrusive integration (+ CSS inheritance).  
 
-Configuration Steps:
-====================
+####Configuration Steps:
 
-##API/Portal side:
+######API/Portal side:
 
 Note: the steps below can be performed from the ACCEPT Portal UI or using directly the REST API methods. 
 
@@ -87,7 +87,7 @@ In this page users invited to participate in the project will see displayed all 
 If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check the Client side implementation section.
 
 
-##Client side:
+####Client side:
 
 Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client source needs to be downloaded and integrated within the target environment.
 
@@ -109,6 +109,6 @@ Note: if the content edition is planned to be happening outside the ACCEPT Porta
 ```
 The structure of the HTML will dictate which content can be edited and who can perform the edition. Within the  [Examples](https://github.com/accept-project/accept-post-edit/tree/master/examples "Examples") folder it is possible to read more on the expected HTML striucture and the client instantiation.
 
-Note:
-=====
+####Note:
+
 More documentation soon.
