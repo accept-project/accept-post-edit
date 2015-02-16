@@ -28,7 +28,36 @@ Full documentation available in the [docs repository](https://github.com/accept-
 
 - Relatively straightforward and non intrusive integration (+ CSS inheritance).  
 
+####Understanding the Portal
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/portal.rst)
+
+####Creating a Project
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/portal/project_creation.rst).
+
+####Project Data
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/portal/project_data.rst).
+
+####Adding Data/Tasks to Projects
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/portal/project_task.rst).
+
+####Getting Project Info
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/api/project_info.rst).
+
+####Getting Project Status
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/api/project_status.rst).
+
+####Getting Task Status
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/api/project_task.rst).
+
+####Adding Users to Projects
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/api/project_users.rst).
+
+####External Projects
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/external_project.rst).
+
 ####Configuration Steps:
+
++Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
 
 In order to make proper use of the ACCEPT Post-Edit environment some prior configuration is needed. 
 This configuration steps can be splitted in two categories, the API/Portal side configuration and the Client side(jQuery plug-in) configuration. 
@@ -97,8 +126,6 @@ In this page users invited to participate in the project will see displayed all 
 
 If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check next steps for the Client side implementation section.
 
-######+Documentation:
-
 
 ####Client Side:
 
@@ -125,5 +152,3 @@ The "Client Side" refers specifically to the jQuery plug-in available in this re
 The structure of the HTML will dictate which content can be edited and who can perform the edition. Within the  [Examples](https://github.com/accept-project/accept-post-edit/tree/master/examples "Examples") folder it is possible to read more on the expected HTML striucture and the client instantiation.
 
 ######Note: More information on client attributes initialization can be found [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
-
-More documentation soon.
