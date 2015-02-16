@@ -37,7 +37,7 @@ There are some configuration steps for both sides:
 
 ######API/Portal side:
 
-Note: the steps below can be performed from the ACCEPT Portal UI or using directly the REST API methods. 
+########Note: the steps below can be performed from the ACCEPT Portal UI or using directly the REST API methods. 
 
 1 - The first step is to create an Edition project and then Upload some content into it. 
 
@@ -95,14 +95,13 @@ In both situations there must be an implementation of the Post-Edit client, in t
 
 In this page users invited to participate in the project will see displayed all the uploaded JSON content in a form of Edition Tasks. Once one is clicked the external pop up dialog should be displayed with the content ready for edit.
 
-If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check the Client side implementation section.
-
+If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check next steps for the Client side implementation section.
 
 ####Client Side:
 
 The "Client Side" refers specifically to the jQuery plug-in available in this repository.
 
-Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client source needs to be downloaded and integrated within the target(Web) environment.
+########Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client source needs to be downloaded and integrated within the target(Web) environment.
 
 - To keep in mind is that the JavaScript client needs to be "pointed at" some specific HTML structure, for instance:
 
@@ -122,6 +121,6 @@ Note: if the content edition is planned to be happening outside the ACCEPT Porta
 ```
 The structure of the HTML will dictate which content can be edited and who can perform the edition. Within the  [Examples](https://github.com/accept-project/accept-post-edit/tree/master/examples "Examples") folder it is possible to read more on the expected HTML striucture and the client instantiation.
 
-####Note: More information on the plug-in attributes initialization can be found [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
+########Note: More information on client attributes initialization can be found [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
 
 More documentation soon.
