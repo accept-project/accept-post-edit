@@ -57,8 +57,6 @@ Full documentation available in the [docs repository](https://github.com/accept-
 
 ####Configuration Steps:
 
-+Information available [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
-
 In order to make proper use of the ACCEPT Post-Edit environment some prior configuration is needed. 
 This configuration steps can be splitted in two categories, the API/Portal side configuration and the Client side(jQuery plug-in) configuration. 
 
@@ -152,3 +150,7 @@ The "Client Side" refers specifically to the jQuery plug-in available in this re
 The structure of the HTML will dictate which content can be edited and who can perform the edition. Within the  [Examples](https://github.com/accept-project/accept-post-edit/tree/master/examples "Examples") folder it is possible to read more on the expected HTML striucture and the client instantiation.
 
 ######Note: More information on client attributes initialization can be found [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
+
+##Support Contact
+Any issue/question on the ACCEPT Post-Edit plug-in can be posted [here](https://github.com/accept-project/accept-post-edit/issues).
+Or contact me directly via davidluzsilva@gmail.com
