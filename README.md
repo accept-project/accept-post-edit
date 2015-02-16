@@ -30,6 +30,11 @@ Full documentation available in the [docs repository](https://github.com/accept-
 
 ####Configuration Steps:
 
+In order to make proper use of the ACCEPT Post-Edit environment some prior configuration is needed. 
+This configuration steps can be splitted in two categories, the API/Portal side configuration and the Client side(jQuery plug-in) configuration. 
+
+There are some configuration steps for both sides:
+
 ######API/Portal side:
 
 Note: the steps below can be performed from the ACCEPT Portal UI or using directly the REST API methods. 
@@ -93,11 +98,13 @@ In this page users invited to participate in the project will see displayed all 
 If the content is planned to be edited within an external environment(let's say the Amazon Mechanical Turk for instance), then a few more steps are needed - check the Client side implementation section.
 
 
-####Client side:
+####Client Side:
 
-Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client source needs to be downloaded and integrated within the target environment.
+The "Client Side" refers specifically to the jQuery plug-in available in this repository.
 
-- To keep in mind is that the client needs to be "pointed at" some specific HTML structure, for instance:
+Note: if the content edition is planned to be happening outside the ACCEPT Portal, then the Post edit client source needs to be downloaded and integrated within the target(Web) environment.
+
+- To keep in mind is that the JavaScript client needs to be "pointed at" some specific HTML structure, for instance:
 
 ```html
 <div id="post-edit-placeholder">
@@ -115,6 +122,6 @@ Note: if the content edition is planned to be happening outside the ACCEPT Porta
 ```
 The structure of the HTML will dictate which content can be edited and who can perform the edition. Within the  [Examples](https://github.com/accept-project/accept-post-edit/tree/master/examples "Examples") folder it is possible to read more on the expected HTML striucture and the client instantiation.
 
-####Note:
+####Note: More information on the plug-in attributes initialization can be found [here](https://github.com/accept-project/accept-docs/blob/master/post-edit/plugin/configuration.rst).
 
 More documentation soon.
