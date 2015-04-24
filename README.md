@@ -1,12 +1,6 @@
 accept-post-edit
 ================
 
-####Citing
-
-If you use the ACCEPT Post-Editing environment in your research work, please cite:
-
-Roturier, J., Mitchell, L., Silva, D. (2013). The ACCEPT post-editing environment: A flexible and customisable online tool to perform and analyse machine translation post-editing. In Proceedings of MT Summit XIV Workshop on Post-editing Technology and Practice, pp. 119-128, Nice, France, September. ([Bib file](https://raw.githubusercontent.com/accept-project/accept-post-edit/master/cite.bib))
-
 ####Overview
 
 The data Edition API allows to edit Web content on the fly, what happens with the change can later be retrieved.
@@ -154,3 +148,9 @@ The structure of the HTML will dictate which content can be edited and who can p
 ##Support Contact
 Any issue/question on the ACCEPT Post-Edit plug-in can be posted [here](https://github.com/accept-project/accept-post-edit/issues).
 Or contact me directly via davidluzsilva@gmail.com
+
+####Citing
+
+If you use the ACCEPT Post-Editing environment in your research work, please cite:
+
+Roturier, J., Mitchell, L., Silva, D. (2013). The ACCEPT post-editing environment: A flexible and customisable online tool to perform and analyse machine translation post-editing. In Proceedings of MT Summit XIV Workshop on Post-editing Technology and Practice, pp. 119-128, Nice, France, September. ([Bib file](https://raw.githubusercontent.com/accept-project/accept-post-edit/master/cite.bib))
